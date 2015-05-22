@@ -25,7 +25,7 @@ and password).
     <paper-input id="idInput" value="{{identifier}}" label="{{identification}}"></paper-input>
     <content select="[pwHeading]"></content>
     <paper-input id="pwInput" value="{{password}}" label="Password" type="password"></paper-input>
-    <paper-button label="{{submit}}" id="submitbutton" raisedButton on-click="{{validate}}">{{submit}}</paper-button>
+    <paper-button label="{{submitTitle}}" id="submitbutton" raisedButton on-click="{{validate}}">{{submitTitle}}</paper-button>
     <content select="[bottom]"></content>
   </template>
 
@@ -48,7 +48,7 @@ and password).
        * @type string
        * @default 'Login'
        */
-      submit: 'Login',
+      submitTitle: 'Login',
 
       /**
        * The `identification` attribute sets an initial identification.
